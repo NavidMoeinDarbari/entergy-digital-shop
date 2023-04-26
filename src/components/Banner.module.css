@@ -1,0 +1,142 @@
+.bannerContainer{
+   width: 100%;
+   max-height: 900px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+.bannerContainer img{
+   width: 100%;
+   filter: brightness(100%);
+}
+.bannerTitle {
+   position: absolute;
+   right: 12%;
+   top: 195px;
+   max-width: 500px;
+   min-width: 240px;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: .2em;
+}
+.bannerTitle h1{
+   width: 100%;
+   font-family: 'Cinema';
+   font-weight: 300;
+   font-size: 4.1rem;
+   color: rgb(15, 30, 49);
+   direction: rtl;
+}
+.bannerTitle p {
+   width: 100%;
+   height: auto;
+   line-height: 2em;
+   direction: rtl;
+   letter-spacing: .2px;
+   font-size: 1.04rem;
+   font-weight: 400;
+   /* right: 160px;
+   top: 320px; */
+   font-family: 'Vazir';
+   color: rgb(41, 41, 41);
+}
+.bannerTitle button {
+   display: flex;
+   align-self: flex-end;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: .3em;
+   margin-top: 1em;
+   background-color: rgb(15, 30, 49);
+   box-shadow: 0px 4px 10px -6px black;
+   color: white;
+   font-family: 'Cinema';
+   font-size: 1.3rem;
+   font-weight: 100;
+   border: none;
+   border-radius: 15px;
+   width: 170px;
+   height: 45px;
+   transition: .2s;
+   cursor: pointer;
+   
+}
+.bannerTitle button:hover {
+   background-color: rgb(27, 53, 87);
+}
+.bannerContainer button img {
+   width: 18px;
+}
+.searchContainer:hover {
+   background-color: rgb(220, 205, 255);
+}
+
+.imgContainer {
+   width: 13%;
+   display: flex;
+   justify-content: center; align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+   .bannerContainer {
+      height: 100vh;
+      justify-content: start;
+      padding-top: 10em;
+   }
+   .bannerContainer img{
+      display: none;
+   }
+   .bannerTitle {
+      position: static;
+      width: 500px;
+      height: auto;
+   }
+   .bannerTitle button {
+      width: 150px;
+      height: 40px;
+      font-size: 1.2rem;
+      margin-top: .8em;
+   }
+}
+@media (max-width: 535px) {
+   .bannerTitle {
+      width: 80%;
+      justify-content: right;
+   }
+   .bannerTitle h1{
+      font-size: 3.5em;
+   }
+   .bannerTitle p{
+      font-size: .95rem;
+      line-height: 1.7em;
+      text-align: justify;
+      letter-spacing: 0;
+   }
+   .bannerTitle button {
+   }
+}
+@media (max-width: 490px) {
+   .bannerTitle h1 {
+      font-size: 3.4rem;
+   }
+}
+@media (max-width: 420px) {
+   .bannerTitle p {
+      font-size: .9rem;
+   }
+   .bannerTitle h1 {
+      font-size: 2.8rem;
+   }
+}
+@media (max-width: 395px) {
+   .bannerTitle h1 {
+      font-size: 2.6rem;
+   }
+}

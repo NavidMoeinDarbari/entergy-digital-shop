@@ -1,0 +1,32 @@
+*{
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   user-select: none;
+}
+body{
+   background-color: rgb(238,238,238);
+}
+@font-face{
+   font-family: 'Vazir';
+   src: url('./fonts/Vazir.ttf');
+}
+@font-face{
+   font-family: 'Lalezar';
+   src: url('./fonts/Lalezar.ttf');
+}
+@font-face{
+   font-family: 'BYekan+';
+   src: url('./fonts/BYekan+.ttf');
+}
+@font-face{
+   font-family: 'Cinema';
+   src: url('./fonts/Cinema Font ( www.rezagraphic.ir ).ttf');
+}
+@font-face{
+   font-family: 'Chamran';
+   src: url('./fonts/Chamran.ttf');
+}
+@font-face{
+   font-family: 'KoohNoor';
+   src: url('./fonts/Kohinoor Arabic Regular.ttf');
+}

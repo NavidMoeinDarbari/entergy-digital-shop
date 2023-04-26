@@ -1,0 +1,35 @@
+.pageContainer {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+}
+.productsContainer {
+   margin-top: 110px;
+   display: grid;
+   grid-template-columns: repeat(4,230px);
+   grid-template-rows: auto;
+   justify-items: center;
+   justify-content: center;
+   align-items: center;
+   gap: 1.2em;
+   width: 100%;
+   height: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+   .productsContainer {
+      grid-template-columns: repeat(3,230px);
+   }
+}
+@media (max-width: 900px) {
+   .productsContainer {
+      grid-template-columns: repeat(2,230px);
+   }
+}
+@media (max-width: 650px) {
+   .productsContainer {
+      grid-template-columns: repeat(1,230px);
+   }
+}

@@ -1,0 +1,123 @@
+.header{
+   backdrop-filter: blur(1px);
+   width: 100%;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+.nav{
+   background-color: rgb(15, 30, 49);
+   box-shadow: 0px 4px 10px -6px black;   
+   margin: 1em 0;
+   padding: .5em 2em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 3em;
+   border-radius: 1.4em;
+}
+.nav ul{
+   display: flex;
+   list-style: none;
+   padding: 0 .5em;
+   gap: 1.2em;
+}
+.nav li{
+   font-size: 1.2rem;
+   padding: .1em .7em;
+   color: white;
+   font-weight: 100;
+   font-family: 'Lalezar';
+   border-radius: .5em;
+   cursor: pointer;
+   transition: all .3s;
+}
+.nav li:hover{
+   background-color: #ffffffe3;
+   color: black;
+}
+.nav a{
+   text-decoration: none;
+}
+.logoContainer{
+   width: 100px;
+}
+.logo{
+   width: 105%;
+}
+.cartIconContainer {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center; align-items: center;
+   background-color: rgb(15, 30, 49);
+   box-shadow: 0px 4px 10px -6px black;
+   border-radius: 50%;
+   position: absolute;
+   left: 175px; top: 21px;
+   cursor: pointer;
+   transition: .3s;
+}
+.cartIconContainer:hover {
+   background-color: rgb(27, 53, 87);
+}
+.cartIconContainer img {
+   width: 20px;
+   height: 20px;
+   /* position: relative; */
+}
+.showCount {
+   position: absolute;
+   background-color: #31220F;
+   color: rgb(255, 255, 255);
+   padding-top: 2px;
+   font-family: 'Vazir';
+   font-weight: 100;
+   font-size: .7rem;
+   display: flex; justify-content: center; align-items: center;
+   right: -2px;
+   top: -4px;
+   width: 16px; height: 16px;
+   border-radius: 50%;
+
+}
+.hideCount {
+   display: none;
+}
+.active {
+   animation: cartAnimation 1.2s infinite ease-in-out;
+}
+
+@keyframes cartAnimation {
+   0%{
+      transform: rotate(0);
+   }
+   30%{
+      transform: rotate(-15deg);
+   }
+   70%{
+      transform: rotate(15deg);
+   }
+   100%{
+      transform: rotate(0);
+   }
+}
+
+
+@media (max-width: 1200px)  {
+   .nav {
+      display: none;
+   }
+}
+@media (max-width:525px) {
+   .cartIconContainer {
+      left: 75px;
+   }
+}
+@media (max-width: 415px) {
+   .cartIconContainer {
+      left: 65px;
+   }
+}
