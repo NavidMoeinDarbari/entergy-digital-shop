@@ -31,8 +31,8 @@ const SingleProductPage = () => {
    useEffect(() => {
       axios.get(`fakestoreapi.com/products/${params.key}`)
       .then(response => {
-         setMyProduct(response)
-         setRating(response.rating)
+         setMyProduct(response.data)
+         setRating(response.data.rating)
       })
    }, [])
 

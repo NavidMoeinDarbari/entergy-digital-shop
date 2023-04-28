@@ -13,7 +13,7 @@ const ProductsPage = () => {
 
    useEffect(() => {
       axios.get('fakestoreapi.com/products')
-      .then(response => response.filter( product => {
+      .then(response => response.data.filter( product => {
          if(product.category === 'electronics') filteredProducts.push(product);
          setProducts(filteredProducts)
       }))
