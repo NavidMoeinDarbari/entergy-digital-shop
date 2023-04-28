@@ -14,7 +14,7 @@ const ProductsPage = () => {
    const [filteredProducts , setFilteredProducts] = useState([])
 
    useEffect(() => {
-      axios.get('fakestoreapi.com/products')
+      axios.get('https://fakestoreapi.com/products')
       .then(response => response.data.filter( product => {
          if(product.category === 'electronics') filteredProducts.push(product);
          setProducts(filteredProducts)

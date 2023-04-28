@@ -18,7 +18,6 @@ import Return from '../Icons/debit-credit-card-back.png';
 import Support from '../Icons/support (1).png';
 import Payment from '../Icons/payment.png';
 import OriginalTag from '../Icons/award.png';
-import StarIcon from '../Icons/star (2).png';
 
 
 const SingleProductPage = () => {
@@ -29,7 +28,7 @@ const SingleProductPage = () => {
    const params = useParams()
 
    useEffect(() => {
-      axios.get(`fakestoreapi.com/products/${params.key}`)
+      axios.get(`https://fakestoreapi.com/products/${params.key}`)
       .then(response => {
          setMyProduct(response.data)
          setRating(response.data.rating)
