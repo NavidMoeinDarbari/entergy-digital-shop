@@ -1,5 +1,5 @@
 .header{
-   backdrop-filter: blur(1px);
+   backdrop-filter: blur(2px);
    width: 100%;
    position: fixed;
    display: flex;

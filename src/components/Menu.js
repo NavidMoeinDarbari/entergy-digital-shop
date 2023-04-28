@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const PageMenu = styled.div`
@@ -25,7 +26,6 @@ const PageMenu = styled.div`
       flex-direction: column;
       justify-content: space-between;
       text-align: right;
-      list-style: none;
       padding: 40px 0 25px 0;
    }
    ul div {
@@ -42,12 +42,14 @@ const PageMenu = styled.div`
       color: rgb(244,244,244);
       width: 100%;
       font-size: 1.15rem;
-      padding: 10px 35px;
+      padding: 10px 30px;
       transition: .2s;
       cursor: pointer;
+      list-style: inside circle;
    }
    li:hover {
       background-color: rgb(33, 55, 80);
+      list-style: inside disc;
    }
    p:hover {
       background-color: rgb(255, 0, 0, 0.3);
@@ -57,13 +59,14 @@ const PageMenu = styled.div`
       width: 210px;
       ul li , p {
          font-size: 1.1rem;
+         padding: 10px 25px;
       }
    }
    @media (max-width: 415px) {
       width: 180px;
       ul li , p {
          font-size: 1rem;
-         padding: 10px 25px;
+         padding: 10px 20px;
       }
    }
 `
@@ -73,9 +76,9 @@ const Menu = (props) => {
       <PageMenu open={props.open}>
          <ul>
             <div>
-               <li>خانه</li>
-               <li>سبد خرید</li>
-               <li>محصولات</li>
+               <Link to='/'><li>خانه</li></Link>
+               <Link to='/cart'><li>سبد خرید</li></Link>
+               <Link to='/products'><li>محصولات</li></Link>
                <li>تخفیف ها</li>
                <li>راهنما</li>
                <li>درباره ما</li>

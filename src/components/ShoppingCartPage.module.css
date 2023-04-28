@@ -1,7 +1,7 @@
 .pageContainer {
    width: 100%;
    min-height: 100vh;
-   display: flex;justify-content: center; align-items: center;
+   display: flex;justify-content: center; align-items: start;
    direction: rtl;
 }
 .cartContainer {
@@ -22,17 +22,18 @@
    flex-direction: column;
    align-items: center;
    gap: .7em;
-   font-family: 'KoohNoor';
+   font-family: 'Lalezar';
 }
 .emptyCardMessage a {
-   font-size: 1.1rem;
-   font-weight: 300;
-   color: blue;
+   font-size: 1.3rem;
+   font-weight: 100;
+   color: rgba(53, 53, 174, 0.933);
    cursor: pointer;
 }
 .emptyCardMessage h2{
-   font-size: 1.2rem;
+   font-size: 1.4rem;
    color: #4a445e;
+   font-weight: 100;
 }
 .checkoutPart {
    display: flex;
@@ -44,7 +45,7 @@
    width: 30%;
    height: auto;
    background-color: #fff;
-   box-shadow: 0px 5px 13px -10px black;
+   box-shadow: 0px 5px 14px -10px black;
    padding: 1.2em 1em 1em 1em;
 }
 .checkoutPart div{
@@ -131,7 +132,7 @@
    height: 260px;
    border-radius: 15px;
    background-color: #fff;
-   box-shadow: 0px 5px 13px -10px black;
+   box-shadow: 0px 5px 14px -10px black;
    display: flex;
    flex-direction: row;
    justify-content: center; align-items: center;
