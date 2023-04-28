@@ -4,6 +4,8 @@ import axios from 'axios';
 import ProductCard from './ProductCard';
 //Styles
 import styles from './ProductsPage.module.css';
+//Icons 
+import Loader from '../Icons/loader (1).gif';
 
 
 const ProductsPage = () => {
@@ -24,8 +26,11 @@ const ProductsPage = () => {
          <div className={styles.pageContainer}>
             <div className={styles.productsContainer}>
                {
-                  filteredProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
-                  )
+                  filteredProducts.length ? filteredProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
+                  ) :
+                  <div  className={styles.loader}>
+                        <img src={Loader}/>
+                  </div>
                }
             </div>
          </div>

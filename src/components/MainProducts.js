@@ -1,4 +1,5 @@
 import React, { useContext, useRef } from 'react';
+import { Link } from 'react-router-dom';
 //Components
 import ProductCard from './ProductCard';
 //Contexts
@@ -8,7 +9,7 @@ import styles from './MainProducts.module.css';
 //Icons 
 import leftArrow from '../Icons/arrow-left(1).png';
 import rightArrow from '../Icons/arrow-right (1).png';
-import { Link } from 'react-router-dom';
+import Loader from '../Icons/loader (1).gif';
 
 const MainProducts = () => {
    
@@ -43,10 +44,13 @@ const MainProducts = () => {
                <div className={styles.arrowsContainerRight} onClick={() => scrollHandler('right')}>
                   <img src={rightArrow}/>
                </div>
-               <div ref={carrousel} className={styles.container}>
+               <div ref={carrousel} className={allProducts.length ? styles.container : styles.loaderContainer}>
                   {
-                     allProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
-                     )
+                     allProducts.length ? allProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
+                     ) : 
+                     <div  className={styles.loader}>
+                        <img src={Loader}/>
+                     </div>
                   }
                </div>
                <div className={styles.arrowsContainerLeft} onClick={() => scrollHandler('left')}>
