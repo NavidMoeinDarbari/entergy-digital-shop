@@ -1,17 +1,19 @@
 .loginFormPage {
    width: 100%;
    min-height: 100vh;
-   display: flex;justify-content: center; align-items: center;
+   display: flex;justify-content: center; align-items: flex-start;
+   padding-top: 90px;
    direction: rtl;
 }
 .formContainer {
    width: 60%;
+   height: 100%;
    height: fit-content;
    display: flex; flex-direction: row; justify-content: center; align-items: center;
    background-color: rgb(255, 255, 255);
    box-shadow: 0px 5px 12px -9px rgb(20, 20, 20);
    border-radius: 15px;
-   margin-top: 50px;
+   padding: 5px 0;
    overflow: hidden;
    position: relative;
 }
@@ -214,6 +216,7 @@
 @media (max-width: 1024px) {
    .formContainer {
       width: 75%;
+      padding: 20px 0;
    }
 }
 @media (max-width: 768px) {
@@ -258,6 +261,9 @@
    }
 }
 @media (max-width: 450px) {
+   .formContainer {
+      padding: 15px 0;
+   }
    .inputContainer label {
       font-size: .85rem;
    }
