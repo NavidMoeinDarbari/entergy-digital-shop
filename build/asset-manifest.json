@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04809428.css",
+    "main.js": "/static/js/main.9f927da3.js",
+    "static/media/instagram (1).png": "/static/media/instagram (1).12e0372bb1b6b1fe3e54.png",
+    "static/media/buy-online.gif": "/static/media/buy-online.77bf77cdd6e1140fb9b6.gif",
+    "static/media/telegram.png": "/static/media/telegram.854c1c464f80478c0c36.png",
+    "static/media/My project.png": "/static/media/My project.f9d3f7fc442bba75c8aa.png",
+    "static/media/twitter.png": "/static/media/twitter.cf1bac1a0ae4d4eeb012.png",
+    "static/media/-big-506x506.png": "/static/media/201910081109291220983babf0c75df5c0f8288d2ac4cc4a-big-506x506.23e5e501db5f7c0c4701.png",
+    "static/media/Lalezar.ttf": "/static/media/Lalezar.2d6b1249340dc2f2ce38.ttf",
+    "static/media/214.png": "/static/media/214.6f7b02db3dff635aa76f.png",
+    "static/media/BYekan+.ttf": "/static/media/BYekan+.f26972c64b83c2aea5ca.ttf",
+    "static/media/loader (1).gif": "/static/media/loader (1).e317ef10d2417a2f2bba.gif",
+    "static/media/3f4c48cc_a404d1f5_1509659173000_1336261-removebg-preview.png": "/static/media/4bd71ce7a1fc3903b16723a0a5380edc3f4c48cc_346a4dfed409d8773ba2033dba4720cea404d1f5_1509659173000_1336261-removebg-preview.752dc1071200e256467c.png",
+    "static/media/AG273FXR_F.png": "/static/media/AG273FXR_F.dfb2f8b2bb590369badd.png",
+    "static/media/Vazir.ttf": "/static/media/Vazir.8698ab7164cb8aa9f35b.ttf",
+    "static/media/Kohinoor Arabic Regular.ttf": "/static/media/Kohinoor Arabic Regular.327ba80eccaf67018eb7.ttf",
+    "static/media/Cinema Font ( www.rezagraphic.ir ).ttf": "/static/media/Cinema Font ( www.rezagraphic.ir ).34b565603648515e950d.ttf",
+    "static/media/output-onlinepngtools.png": "/static/media/output-onlinepngtools.423d4b880c01724f9c32.png",
+    "static/media/Chamran.ttf": "/static/media/Chamran.ab90de600ad7cbbdedb2.ttf",
+    "static/media/Macbook-Pro-13-20162019_Silver_600x.webp": "/static/media/Macbook-Pro-13-20162019_Silver_600x.59615d6278dd3a3f47b9.webp",
+    "static/media/enamad_icon_text_color_blue_1024 (1).png": "/static/media/enamad_icon_text_color_blue_1024 (1).cefb0444fadf33582ece.png",
+    "index.html": "/index.html",
+    "main.04809428.css.map": "/static/css/main.04809428.css.map",
+    "main.9f927da3.js.map": "/static/js/main.9f927da3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04809428.css",
+    "static/js/main.9f927da3.js"
+  ]
+}
