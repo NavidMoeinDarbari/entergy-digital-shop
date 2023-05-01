@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.50bd67a5.css",
+    "main.css": "/static/css/main.01d3de3c.css",
     "main.js": "/static/js/main.9f927da3.js",
     "static/media/instagram (1).png": "/static/media/instagram (1).12e0372bb1b6b1fe3e54.png",
     "static/media/buy-online.gif": "/static/media/buy-online.77bf77cdd6e1140fb9b6.gif",
@@ -22,11 +22,11 @@
     "static/media/Macbook-Pro-13-20162019_Silver_600x.webp": "/static/media/Macbook-Pro-13-20162019_Silver_600x.59615d6278dd3a3f47b9.webp",
     "static/media/enamad_icon_text_color_blue_1024 (1).png": "/static/media/enamad_icon_text_color_blue_1024 (1).cefb0444fadf33582ece.png",
     "index.html": "/index.html",
-    "main.50bd67a5.css.map": "/static/css/main.50bd67a5.css.map",
+    "main.01d3de3c.css.map": "/static/css/main.01d3de3c.css.map",
     "main.9f927da3.js.map": "/static/js/main.9f927da3.js.map"
   },
   "entrypoints": [
-    "static/css/main.50bd67a5.css",
+    "static/css/main.01d3de3c.css",
     "static/js/main.9f927da3.js"
   ]
 }
