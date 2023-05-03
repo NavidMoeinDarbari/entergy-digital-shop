@@ -44,7 +44,7 @@ const SearchButton = () => {
 
    return (
       <>
-         <div className={styles.searchContainer} style={{width: isActive ? '200px':'110px'}}>
+         <div className={styles.searchContainer} style={{width: isActive ? '200px':'110px',}}>
             <img src={SearchIcon} />
             <input type='text' placeholder='جستجو' onChange={(event) => setValue(event.target.value)}/>
          </div>

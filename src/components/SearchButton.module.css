@@ -94,9 +94,18 @@ a {
 }
 
 /* Responsive */
-
+@media (max-width: 768px) {
+   .searchContainer {
+      right: 68px;
+   }
+}
 @media (max-width:415px) {
    .searchContainer {
       right: 65px;
+      max-width: 125px;
+   }
+   .searchResults {
+      right: 50px;
+      padding: .4em .3em;
    }
 }

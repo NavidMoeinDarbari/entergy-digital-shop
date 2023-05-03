@@ -4,7 +4,7 @@ class DocumentPage extends Component {
    render() {
       return (
          <div>
-            <h1>Document</h1> 
+            
          </div>
       );
    }
