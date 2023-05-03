@@ -9,7 +9,7 @@
 }
 .nav{
    background-color: rgb(15, 30, 49);
-   box-shadow: 0px 4px 10px -6px black;   
+   box-shadow: 0px 4px 11px -7px black;   
    margin: 1em 0;
    padding: .5em 2em;
    display: flex;
@@ -17,6 +17,7 @@
    align-items: center;
    gap: 3em;
    border-radius: 1.4em;
+   z-index: 10;
 }
 .nav ul{
    display: flex;
@@ -53,7 +54,7 @@
    display: flex;
    justify-content: center; align-items: center;
    background-color: rgb(15, 30, 49);
-   box-shadow: 0px 4px 10px -6px black;
+   box-shadow: 0px 4px 11px -7px black;
    border-radius: 50%;
    position: absolute;
    left: 175px; top: 21px;

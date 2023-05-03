@@ -8,16 +8,16 @@ import quantityChecker from '../functions/quantityChecker';
 import styled from 'styled-components';
 import styles from './ProductCard.module.css';
 //Icons
-import PlusIcon from '../Icons/plus.png';
-import MinusIcon from '../Icons/minus.png';
-import DeleteIcon from '../Icons/recycle-bin.png';
-import StarIcon from '../Icons/star (2).png';
+import PlusIcon from '../Icons/plus.svg';
+import MinusIcon from '../Icons/minus.svg';
+import DeleteIcon from '../Icons/recycle-bin.svg';
+import StarIcon from '../Icons/star (2).svg';
 //Context
 import { CartContext } from '../context/CartContextProvider';
 
 const Card = styled.div`
    width: 230px;
-   height: 373px;
+   height: 360px;
    background-color: white;
    border-radius: 15px;
    box-shadow: 0px 2px 12px -7px black;
@@ -25,6 +25,10 @@ const Card = styled.div`
    overflow: hidden;
    a {
       text-decoration: none;
+   }
+   @media (max-width: 450px) {
+      width: 215px;
+      height: 320px;
    }
 `
 const ProductCard = (props) => {

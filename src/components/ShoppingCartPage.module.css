@@ -211,11 +211,11 @@
    background-position: right center;
 }
 .info ul li:not(:nth-child(1)) {
-   background-image: url('../Icons/check.png');
+   background-image: url('../Icons/check.svg');
    background-size: 15px;
 }
 .price {
-   background-image: url('../Icons/dollar.png');
+   background-image: url('../Icons/dollar.svg');
    background-repeat: no-repeat;
    background-position: right center;
    background-size: 15px;

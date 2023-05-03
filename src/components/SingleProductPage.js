@@ -9,15 +9,15 @@ import { CartContext } from '../context/CartContextProvider';
 //Styles
 import styles from './SingleProductPage.module.css';
 //Icons
-import DeleteIcon from '../Icons/recycle-bin.png';
-import PlusIcon from '../Icons/plus.png';
-import MinusIcon from '../Icons/minus.png';
-import Notice from '../Icons/information.png';
-import FastTime from '../Icons/flash-delivery.png';
-import Return from '../Icons/debit-credit-card-back.png';
-import Support from '../Icons/support (1).png';
-import Payment from '../Icons/payment.png';
-import OriginalTag from '../Icons/award.png';
+import DeleteIcon from '../Icons/recycle-bin.svg';
+import PlusIcon from '../Icons/plus.svg';
+import MinusIcon from '../Icons/minus.svg';
+import Notice from '../Icons/information.svg';
+import FastTime from '../Icons/flash-delivery.svg';
+import Return from '../Icons/debit-credit-card-back.svg';
+import Support from '../Icons/support (1).svg';
+import Payment from '../Icons/payment.svg';
+import OriginalTag from '../Icons/award.svg';
 
 
 const SingleProductPage = () => {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styles from './Banner.module.css';
 //Icons
 import BannerPic5 from '../images/My project.png';
-import Arrow from '../Icons/arrow (1).png';
+import Arrow from '../Icons/arrow (1).svg';
 
 class Banner extends Component {
    render() {

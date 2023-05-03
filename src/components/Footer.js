@@ -6,9 +6,9 @@ import styles from './Footer.module.css';
 import ZarinpalLogo from '../images/zarin-palpng.parspng.com_.png';
 import EnamadLogo from '../images/enamad_icon_text_color_blue_1024 (1).png'; 
 import Logo from '../images/output-onlinepngtools.png';
-import TelegramIcon from '../Icons/telegram.png';
-import InstagramIcon from '../Icons/instagram (1).png';
-import TwitterIcon from '../Icons/twitter.png';
+import TelegramIcon from '../Icons/telegram.svg';
+import InstagramIcon from '../Icons/instagram (1).svg';
+import TwitterIcon from '../Icons/twitter.svg';
 
 const Footer = () => {
    return (

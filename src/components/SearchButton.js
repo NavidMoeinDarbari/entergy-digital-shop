@@ -6,7 +6,7 @@ import titleSplitter from '../functions/titleSplitter.js';
 import { ProductsContext } from '../App.js';
 //Icons
 import styles from './SearchButton.module.css';
-import SearchIcon from '../Icons/search (1).png';
+import SearchIcon from '../Icons/search (1).svg';
 
 const SearchButton = () => {
 

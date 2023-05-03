@@ -7,8 +7,9 @@ import { ProductsContext } from '../App';
 //Styles
 import styles from './MainProducts.module.css';
 //Icons 
-import leftArrow from '../Icons/arrow-left(1).png';
-import rightArrow from '../Icons/arrow-right (1).png';
+import leftArrow from '../Icons/arrow-left_1_.svg';
+import rightArrow from '../Icons/arrow-right (1).svg';
+import goToArrow from '../Icons/arrow (1).svg';
 import Loader from '../Icons/loader (1).gif';
 
 const MainProducts = () => {
@@ -38,7 +39,7 @@ const MainProducts = () => {
          <div className={styles.mainProducts}>
             <div className={styles.headerTitles}>
                <p> جدید ترین محصولات و پیشنهاد ها</p>
-               <Link to="/products"><p>مشاهده همه</p></Link>
+               <Link to="/products"><p><img src={goToArrow}/>مشاهده همه</p></Link>
             </div>
             <div className={styles.carrousel}>
                <div className={styles.arrowsContainerRight} onClick={() => scrollHandler('right')}>

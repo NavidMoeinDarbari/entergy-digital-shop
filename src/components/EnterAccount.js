@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 //Styles
 import styled from 'styled-components';
 //Icons
-import UserIcon from '../Icons/person.png';
+import UserIcon from '../Icons/person.svg';
 
 const MainDiv = styled.div`
    width: 140px;
@@ -12,7 +12,7 @@ const MainDiv = styled.div`
    left: 25px;
    top: 21px;
    background-color: rgb(15, 30, 49);
-   box-shadow: 0px 4px 10px -6px black;
+   box-shadow: 0px 4px 11px -7px black;
    border-radius: 1.5em;
    display: flex;
    justify-content: center;

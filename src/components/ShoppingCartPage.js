@@ -5,9 +5,9 @@ import { CartContext } from '../context/CartContextProvider';
 //Styles
 import styles from './ShoppingCartPage.module.css';
 //Icons
-import CloseIcon from '../Icons/close-tick.png';
-import PlusIcon from '../Icons/plus.png';
-import MinusIcon from '../Icons/minus.png';
+import CloseIcon from '../Icons/close-tick.svg';
+import PlusIcon from '../Icons/plus.svg';
+import MinusIcon from '../Icons/minus.svg';
 
 const ShoppingCartPage = () => {
 
@@ -49,7 +49,7 @@ const ShoppingCartPage = () => {
                      <div className={styles.item} key={item.id}>
                         <img className={styles.closeButton} src={CloseIcon} onClick={() => dispatch({type:'REMOVE-ITEM' , payload:item})}/>
                         <section className={styles.imagePart}>
-                           <img src={item.image}/>
+                           <img src={item.image} alt={item.title}/>
                            <span></span>
                         </section>
                         <section className={styles.infoPart}>

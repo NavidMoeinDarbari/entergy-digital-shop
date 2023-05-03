@@ -9,7 +9,7 @@ const Ul = styled.ul`
    width: 40px;
    height: 40px;
    background-color: ${props => props.open ? 'rgb(23, 42, 64)' : 'rgb(15, 30, 49)'};
-   box-shadow: 0px 4px 10px -6px black;
+   box-shadow: 0px 4px 11px -7px black;
    border-radius: 50%;
    display: flex;
    justify-content: center;

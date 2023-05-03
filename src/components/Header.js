@@ -8,7 +8,7 @@ import EnterAccount from './EnterAccount';
 import styles from './Header.module.css';
 //Icons
 import Logo from '../images/output-onlinepngtools.png';
-import CartIcon from '../Icons/cart.png';
+import CartIcon from '../Icons/cart.svg';
 //Context
 import { CartContext } from '../context/CartContextProvider';
 
