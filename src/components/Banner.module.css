@@ -61,7 +61,7 @@
    font-weight: 100;
    border: none;
    border-radius: 15px;
-   width: 170px;
+   width: 160px;
    height: 45px;
    transition: .2s;
    cursor: pointer;
@@ -71,7 +71,7 @@
    background-color: rgb(15,30,49);
 }
 .bannerContainer button img {
-   width: 18px;
+   width: 22px;
 }
 .searchContainer:hover {
    background-color: rgb(220, 205, 255);
