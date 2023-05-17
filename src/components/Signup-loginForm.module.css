@@ -1,17 +1,14 @@
 .loginFormPage {
    width: 100%;
    min-height: 100vh;
-   display: flex;justify-content: center; align-items: flex-start;
-   padding-top: 100px;
+   display: flex;justify-content: center; align-items: center;
+   padding-top: 20px;
    direction: rtl;
 }
 .formContainer {
    width: 60%;
-   height: 100%;
    height: fit-content;
    display: flex; flex-direction: row; justify-content: center; align-items: center;
-   background-color: rgb(255, 255, 255);
-   box-shadow: 0px 5px 12px -9px rgb(20, 20, 20);
    border-radius: 15px;
    padding: 5px 0;
    overflow: hidden;
@@ -26,7 +23,7 @@
    position: relative;
 }
 .loginFormPart h2 {
-   font-size: 1.7rem;
+   font-size: 1.8rem;
    font-weight: 100;
    margin-bottom: .3em;
    color: rgb(24, 44, 71);
@@ -40,7 +37,7 @@
    position: relative;
 }
 .formPart h2 {
-   font-size: 1.7rem;
+   font-size: 1.8rem;
    font-weight: 100;
    margin-bottom: .3em;
    color: rgb(24, 44, 71);
@@ -50,11 +47,11 @@
    width: 80%;
    height: auto;
    display: flex; flex-direction: column;
-   gap: .4em;
+   gap: .5em;
    position: relative;
 }
 .inputContainer label {
-   font-size: .95rem;
+   font-size: 1rem;
    font-weight: 100;
    color: rgb(36, 36, 36);
    font-family: 'KoohNoor';
@@ -67,7 +64,7 @@
    font-weight: 400;
    padding: 0 .5em;
    display: flex; justify-content: center; align-items: center;
-   background-color: rgb(234, 231, 255);
+   background-color: rgb(255, 255, 255);
    border-radius: .5em;
    cursor: text;
 }
@@ -110,7 +107,7 @@
    gap: 1em;
 }
 .checkboxContainer label {
-   font-size: .8rem;
+   font-size: .85rem;
    font-family: 'KoohNoor';
    font-weight: bold;
    color: rgb(51, 29, 81);
@@ -119,7 +116,7 @@
    position: absolute;
    left: 0;
    color: red;
-   font-size: 1.2rem;
+   font-size: 1.3rem;
 }
 .checkboxContainer input {
    cursor: pointer;
@@ -130,17 +127,19 @@
    display: flex; flex-direction: row; justify-content: center;align-items: center;
    gap: .5em;
 }
-.buttonContainer button {
+.buttonContainer button , .loginButtonContainer button {
    width: 60%;
-   height: 37px;
+   height: 40px;
    border-radius: 12px;
    border: none;
-   font-size: 1rem;
+   font-size: 1.1rem;
    font-family: 'KoohNoor';
    font-weight: 400;
    color: white;
    transition: .1s;
    cursor: pointer;
+}
+.buttonContainer button {
    background-color: rgb(91, 91, 192);
 }
 .buttonContainer button:hover {
@@ -148,28 +147,18 @@
 }
 .loginButtonContainer {
    width: 80%;
-   margin-top: 1em ;
+   margin-top: 1em;
    display: flex; flex-direction: column; justify-content: center;align-items: center;
    gap: 1.2em;
 }
 .loginButtonContainer button {
-   width: 60%;
-   height: 37px;
-   border-radius: 12px;
-   border: none;
-   font-size: 1rem;
-   font-family: 'KoohNoor';
-   font-weight: 400;
-   color: white;
-   transition: .1s;
-   cursor: pointer;
    background-color: rgb(65, 148, 65);
 }
 .loginButtonContainer button:hover {
    background-color: rgb(36, 92, 36);
 }
 .loginButtonContainer a {
-   font-size: .95rem;
+   font-size: 1rem;
    font-family: 'KoohNoor';
    font-weight: bold;
    color: blue;
@@ -177,7 +166,7 @@
 }
 .loginButtonContainer p {
    font-family: 'KoohNoor';
-   font-size: .9rem;
+   font-size: 1rem;
 }
 .divider {
    position: absolute;
@@ -202,12 +191,12 @@
    max-height: 100%;
 }
 .bannerPart p {
-   font-size: .9rem;
+   font-size: 1rem;
 }
 .bannerPart a {
    text-decoration: none;
    cursor: pointer;
-   font-size: .95rem;
+   font-size: 1rem;
    font-weight: bold;
    color: blue;
 }

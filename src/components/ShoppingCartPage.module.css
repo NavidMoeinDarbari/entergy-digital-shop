@@ -2,10 +2,10 @@
    width: 100%;
    min-height: 100vh;
    display: flex;justify-content: center; align-items: start;
+   padding-top: 110px;
    direction: rtl;
 }
 .cartContainer {
-   margin-top: 110px;
    width: 85%;
    height: fit-content;
    display: flex;

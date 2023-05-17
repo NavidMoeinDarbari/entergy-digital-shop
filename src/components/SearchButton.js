@@ -1,4 +1,4 @@
-import React , {useEffect , useState , useContext} from 'react';
+import React , {useEffect , useState , useContext , useRef} from 'react';
 import { Link } from 'react-router-dom';
 //Functions
 import titleSplitter from '../functions/titleSplitter.js';
@@ -14,6 +14,8 @@ const SearchButton = () => {
    const [value , setValue] = useState("");
    const [searchedItems , setSearchedItems] = useState([]);
    const [isActive , setIsActive] = useState(false);
+
+   const input = useRef(null)
    
    useEffect(()=> {
       if(value.length >= 1) {
@@ -40,13 +42,15 @@ const SearchButton = () => {
     
    const searchHandler = () => {
       setIsActive(false)
+      setSearchedItems([])
+      input.current.value = ''
    }
 
    return (
       <>
-         <div className={styles.searchContainer} style={{width: isActive ? '200px':'110px',}}>
+         <div className={styles.searchContainer} style={{width: isActive ? '200px':'110px'}}>
             <img src={SearchIcon} />
-            <input type='text' placeholder='جستجو' onChange={(event) => setValue(event.target.value)}/>
+            <input type='text' placeholder='جستجو' ref={input} onChange={(event) => setValue(event.target.value)}/>
          </div>
          {isActive && searchedItems.length &&
             <div  className={styles.searchResults}>

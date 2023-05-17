@@ -94,12 +94,11 @@
    font-size: .95rem;
    font-weight: 100;
    padding: 0 8px;
-   color: rgb(255, 255, 255);
-   background-color: #585476;
+   color: rgba(15, 31, 53, 0.807);
    transition: .2s;
 }
 .headerTitles a p:hover {
-   background-color: rgba(15, 30, 49, 0.918);
+   background-color: rgb(255, 255, 255);
 }
 .headerTitles a p img{
    width: 14px;

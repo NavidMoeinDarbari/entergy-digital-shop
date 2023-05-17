@@ -2,7 +2,7 @@
    width: 100%; min-height: 100vh;
    display: flex;
    justify-content: center;
-   padding: 8em 0;
+   padding-top: 110px;
    background-color: rgb(238,238,238);
 }
 .productContainer {
@@ -58,7 +58,7 @@
    text-align: ltr;
    direction: ltr;
    margin-bottom: .4em;
-   color: rgb(45, 45, 45);
+   color: rgb(29, 29, 29);
 }
 .infoPart ul {
    display: flex;
@@ -66,7 +66,7 @@
    gap: 0em;
 }
 .infoPart li {
-   color: rgba(0, 0, 0, 0.8);
+   color: rgba(0, 0, 0, 0.894);
    font-weight: 600;
    font-size: .85rem;
    width: 100%; height: 30px;
@@ -89,7 +89,7 @@
 }
 
 .infoPart span {
-   color: #30304a;
+   color: #24248b;
 }
 .votesCount {
    font-size: .8rem;
@@ -135,11 +135,10 @@
    font-weight: 400;
    font-size: 1rem;
    background-color: #4A445E;
-   color: white;
    letter-spacing: .2px;
    width: 160px;
    min-width: 150px;
-   color: #fff;
+   color: #ffffff;
    transition: .3s;
    border-radius: 13px;
    box-shadow: 0px 2px 8px -4px black;
@@ -165,6 +164,7 @@
    height: 28px;
    display: flex; justify-content: center; align-items: center;
    background-color: #d5d5fe;
+   color: black;
    border-radius: .4em;
 }
 
@@ -203,14 +203,14 @@
 .noticePart p {
    font-size: .92rem;
    line-height: 25px;
-   color: #5a5a5a;
+   color: #444444;
    text-align: justify;
    font-family: 'B Mitra';
    font-weight: 600;
 }
 .descriptionPart h2 {
    font-size: .9rem;
-   color: rgba(0, 0, 0, 0.651);
+   color: rgb(0, 0, 0);
    direction: rtl;
    font-family: 'KoohNoor';
 }
@@ -219,7 +219,7 @@
    font-weight: 400;
    line-height: 1.4em;
    text-align: left;
-   color: black;
+   color: rgb(0, 0, 0);
 }
 .shopServicesContainer {
    display: grid;
@@ -245,7 +245,7 @@
    font-size: .75rem;
    line-height: 15px;
    height: fit-content;
-   color: #020202;
+   color: #000000;
 }
 
 

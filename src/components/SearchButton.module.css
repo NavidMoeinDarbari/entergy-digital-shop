@@ -25,6 +25,7 @@
    right: 45px; top: 10px;
    border: none; outline: none;
    text-align: right;
+   direction: rtl;
    font-family: 'Vazir';
    font-size: .9rem;
    padding-bottom: .1em;
