@@ -1,9 +1,8 @@
-import React, { useContext, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 //Components
 import ProductCard from './ProductCard';
-//Contexts
-import { ProductsContext } from '../App';
 //Styles
 import styles from './MainProducts.module.css';
 //Icons 
@@ -14,7 +13,7 @@ import Loader from '../Icons/loader (1).gif';
 
 const MainProducts = () => {
    
-   const allProducts = useContext(ProductsContext);
+   const allProducts = useSelector(state => state.productsState.products)
    const carrousel = useRef(null);
 
    const scrollHandler = (direction) => {

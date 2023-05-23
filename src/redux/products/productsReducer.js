@@ -4,7 +4,7 @@ const initialState = {
    error: ''
 }
 
-const cartReducer = (state= initialState, action) => {
+const productsReducer = (state= initialState, action) => {
    switch (action.type) {
       case 'FETCH_PRODUCTS_REQUEST':
          return {
@@ -25,4 +25,4 @@ const cartReducer = (state= initialState, action) => {
    }
 }
 
-export default cartReducer;
+export default productsReducer;

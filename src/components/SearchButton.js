@@ -1,16 +1,15 @@
-import React , {useEffect , useState , useContext , useRef} from 'react';
+import React , {useEffect , useState , useRef} from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 //Functions
 import titleSplitter from '../functions/titleSplitter.js';
-//Context
-import { ProductsContext } from '../App.js';
 //Icons
 import styles from './SearchButton.module.css';
 import SearchIcon from '../Icons/search (1).svg';
 
 const SearchButton = () => {
 
-   const products = useContext(ProductsContext)
+   const products = useSelector(state => state.productsState.products)
    const [value , setValue] = useState("");
    const [searchedItems , setSearchedItems] = useState([]);
    const [isActive , setIsActive] = useState(false);

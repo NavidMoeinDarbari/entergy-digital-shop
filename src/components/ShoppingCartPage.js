@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-//Context
-import { CartContext } from '../context/CartContextProvider';
+import { useDispatch, useSelector } from 'react-redux';
+//Redux Actions
+import { addItem,removeItem,increase,decrease,checkout,clear } from '../redux/cart/cartAction';
 //Styles
 import styles from './ShoppingCartPage.module.css';
 //Icons
@@ -11,7 +12,8 @@ import MinusIcon from '../Icons/minus.svg';
 
 const ShoppingCartPage = () => {
 
-   const {state , dispatch} = useContext(CartContext);
+   const state = useSelector(state => state.cartState)
+   const dispatch = useDispatch()
 
    return (
       <div className={styles.pageContainer}>
@@ -47,7 +49,7 @@ const ShoppingCartPage = () => {
                {
                   state.selectedItems.map(item => 
                      <div className={styles.item} key={item.id}>
-                        <img className={styles.closeButton} src={CloseIcon} onClick={() => dispatch({type:'REMOVE-ITEM' , payload:item})}/>
+                        <img className={styles.closeButton} src={CloseIcon} onClick={() => dispatch(removeItem(item))}/>
                         <section className={styles.imagePart}>
                            <img src={item.image} alt={item.title}/>
                            <span></span>
@@ -67,9 +69,9 @@ const ShoppingCartPage = () => {
                               <div className={styles.count}>
                                  <h3>تعداد :</h3>
                                  <div>
-                                    <img src={PlusIcon} onClick={()=> dispatch({type: 'INCREASE' , payload: item})} />
+                                    <img src={PlusIcon} onClick={()=> dispatch(increase(item))} />
                                     <p>{item.quantity}</p>
-                                    <img src={MinusIcon} onClick={()=> dispatch({type: 'DECREASE' , payload: item})} />
+                                    <img src={MinusIcon} onClick={()=> dispatch(decrease(item))} />
                                  </div>
                               </div>
                               <div className={styles.totalPrice}>

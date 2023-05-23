@@ -1,5 +1,8 @@
-import React, { useState , useContext } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector , useDispatch } from 'react-redux';
+//Redux
+import { addItem,removeItem,increase,decrease } from '../redux/cart/cartAction';
 //Functions
 import titleSplitter from '../functions/titleSplitter';
 import cartChecker from '../functions/cartChecker';
@@ -12,8 +15,7 @@ import PlusIcon from '../Icons/plus.svg';
 import MinusIcon from '../Icons/minus.svg';
 import DeleteIcon from '../Icons/recycle-bin.svg';
 import StarIcon from '../Icons/star (2).svg';
-//Context
-import { CartContext } from '../context/CartContextProvider';
+
 
 const Card = styled.div`
    width: 230px;
@@ -34,7 +36,9 @@ const Card = styled.div`
 const ProductCard = (props) => {
 
    const [count , setCount] = useState(0); 
-   const {state , dispatch} = useContext(CartContext);
+
+   const state = useSelector(state => state.cartState)
+   const dispatch = useDispatch()
 
    return (
       <Card>
@@ -72,15 +76,15 @@ const ProductCard = (props) => {
             </div>
             <div className={quantityChecker(state, props.id) ? styles.btnContainerRight : styles.btnContainer}>
                {
-                  quantityChecker(state ,props.id) > 1 && <img src={MinusIcon} onClick={()=> dispatch({type: 'DECREASE', payload: props.productData})} /> 
+                  quantityChecker(state ,props.id) > 1 && <img src={MinusIcon} onClick={()=> dispatch(decrease(props.productData))} /> 
                }
                {
-                  quantityChecker(state ,props.id) === 1 && <img src={DeleteIcon}  onClick={()=> dispatch({type: 'REMOVE-ITEM' , payload: props.productData})} />
+                  quantityChecker(state ,props.id) === 1 && <img src={DeleteIcon}  onClick={()=> dispatch(removeItem(props.productData))} />
                }
                {
                   cartChecker(state , props.id) ? 
-                  <img src={PlusIcon} onClick={()=> dispatch({type: 'INCREASE' , payload: props.productData})} /> :
-                  <button onClick={()=> dispatch({type: 'ADD-ITEM' , payload: props.productData})}>افزودن به سبد</button>
+                  <img src={PlusIcon} onClick={()=> dispatch(increase(props.productData))} /> :
+                  <button onClick={()=> dispatch(addItem(props.productData))}>افزودن به سبد</button>
                }
             </div>
          </div>

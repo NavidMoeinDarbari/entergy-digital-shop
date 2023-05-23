@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 //Components
 import BurgerButton from './BurgerButton';
 import SearchButton from './SearchButton';
@@ -9,12 +10,11 @@ import styles from './Header.module.css';
 //Icons
 import Logo from '../images/output-onlinepngtools.png';
 import CartIcon from '../Icons/cart.svg';
-//Context
-import { CartContext } from '../context/CartContextProvider';
+
 
 const Header = () => {
 
-   const {state} = useContext(CartContext);
+   const state = useSelector(state => state.cartState) 
 
    return (
       <header className={styles.header}>

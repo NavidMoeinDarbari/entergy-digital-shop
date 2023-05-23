@@ -1,11 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { useSelector , useDispatch } from 'react-redux';
+//Redux Actions
+import { increase,decrease,removeItem,addItem } from '../redux/cart/cartAction';
 //Functions
 import quantityChecker from '../functions/quantityChecker';
 import cartChecker from '../functions/cartChecker';
-//Contexts
-import { CartContext } from '../context/CartContextProvider';
 //Styles
 import styles from './SingleProductPage.module.css';
 //Icons
@@ -22,10 +23,11 @@ import OriginalTag from '../Icons/award.svg';
 
 const SingleProductPage = () => {
 
-   const {state , dispatch} = useContext(CartContext)
+   const params = useParams()
    const [myProduct , setMyProduct] = useState([])
    const [rating , setRating] = useState([])
-   const params = useParams()
+   const state = useSelector(state => state.cartState)
+   const dispatch = useDispatch()
 
    useEffect(() => {
       axios.get(`https://fakestoreapi.com/products/${params.key}`)
@@ -34,8 +36,7 @@ const SingleProductPage = () => {
          setRating(response.data.rating)
       })
    }, [])
-
-
+   
    return (
       <div className={styles.page}>
          <div className={styles.productContainer}>
@@ -59,20 +60,19 @@ const SingleProductPage = () => {
                   </ul>
                   <div className={styles.buttonContainer}>
                      <div className={styles.count}>
-                        
                         {
-                           quantityChecker(state ,myProduct.id) > 1 && <img src={MinusIcon} onClick={()=> dispatch({type: 'DECREASE', payload: myProduct})} /> 
+                           quantityChecker(state ,myProduct.id) > 1 && <img src={MinusIcon} onClick={()=> dispatch(decrease(myProduct))} /> 
                         }
                         {
-                           quantityChecker(state ,myProduct.id) === 1 && <img src={DeleteIcon}  onClick={()=> dispatch({type: 'REMOVE-ITEM' , payload: myProduct})} />
+                           quantityChecker(state ,myProduct.id) === 1 && <img src={DeleteIcon}  onClick={()=> dispatch(removeItem(myProduct))} />
                         }
                         {
                            quantityChecker(state , myProduct.id) && <p>{quantityChecker(state , myProduct.id)}</p>
                         }
                         {
                            cartChecker(state , myProduct.id) ? 
-                           <img src={PlusIcon} onClick={()=> dispatch({type: 'INCREASE' , payload: myProduct})} /> :
-                           <button onClick={()=> dispatch({type: 'ADD-ITEM' , payload: myProduct})}>افزودن به سبد</button>
+                           <img src={PlusIcon} onClick={()=> dispatch(increase(myProduct))} /> :
+                           <button onClick={()=> dispatch(addItem(myProduct))}>افزودن به سبد</button>
                         }
                      </div>
                   </div>

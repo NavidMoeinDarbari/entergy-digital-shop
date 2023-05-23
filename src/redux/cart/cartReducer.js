@@ -1,5 +1,3 @@
-import React , {createContext , useReducer} from 'react';
-
 const initialState = {
    selectedItems: [],
    itemsCounter: 0,
@@ -13,8 +11,7 @@ const sumItems = (items) => {
    return {itemsCounter , total}
 }
 
-const contextReducer = (state , action) => {
-   console.log(state);
+const cartReducer = (state=initialState , action) => {
    switch(action.type){
       case 'ADD-ITEM': 
          if(!state.selectedItems.find(item => item.id === action.payload.id)) {
@@ -68,17 +65,4 @@ const contextReducer = (state , action) => {
    } 
 }
 
-export const CartContext = createContext();
-
-const CartContextProvider = (props) => {
-
-   const [state , dispatch] = useReducer(contextReducer , initialState)
-
-   return (
-      <CartContext.Provider value={{state , dispatch}}>
-         {props.children}
-      </CartContext.Provider>
-   );
-};
-
-export default CartContextProvider;
+export default cartReducer;

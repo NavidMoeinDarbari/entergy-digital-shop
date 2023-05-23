@@ -1,41 +1,37 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-//!Context
-import CartContextProvider from "./context/CartContextProvider";
-//!Components
+import React , {useEffect} from "react";
+import { useLocation } from "react-router-dom";
+//Redux
+import { useDispatch } from "react-redux";
+import { fetchProducts } from "./redux/products/productsAction";
+//Components
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BurgerButton from "./components/BurgerButton";
-//!Routes
+//Routes
 import MainRoutes from "./components/MainRoutes";
-//!Styles
+//Styles
 import styles from './App.module.css';
 
-export const ProductsContext = React.createContext();
 
 const App = () => {
 
-   const [products , setProducts] = useState([]);
-   const [filtered , setFiltered] = useState([])
+   const dispatch = useDispatch()
+   const location = useLocation()
 
-   useEffect(() => {
-      axios.get('https://fakestoreapi.com/products')
-      .then(response => response.data.filter( product => {
-         if(product.category === 'electronics') filtered.push(product);
-         setProducts(filtered)
-      }))
+   useEffect(()=> {
+      dispatch(fetchProducts())
    }, [])
+   
+   useEffect(()=> {
+      window.scrollTo(0,0)
+   },[location])
 
    return (
       <div className={styles.app}>
-         <CartContextProvider>
-            <ProductsContext.Provider value={products}>
-               <Header/>
-               <MainRoutes/>
-               <BurgerButton/>
-               <Footer/>
-            </ProductsContext.Provider>
-         </CartContextProvider>
+         <Header/>
+         <MainRoutes/>
+         <BurgerButton/>
+         <Footer/>
       </div>
    )
 }

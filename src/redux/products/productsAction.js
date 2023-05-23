@@ -1,4 +1,4 @@
-const { default: axios } = require("axios")
+import axios from "axios"
 
 const fetchProductsRequest = () => {
    return {
@@ -20,12 +20,12 @@ const fetchProductsFailure = error => {
    }
 }
 
-const fetchProducts = () => {
+export const fetchProducts = () => {
    return (dispatch) => {
       dispatch(fetchProductsRequest())
       axios.get('https://fakestoreapi.com/products')
          .then(response => {
-            const products = response.data
+            const products = response.data.filter(product => product.category === 'electronics')
             dispatch(fetchProductsSuccess(products))
          })
          .catch(error => {
