@@ -45,9 +45,12 @@
    font-family: 'Vazir';
    color: rgb(41, 41, 41);
 }
-.bannerTitle button {
+.bannerTitle a {
    display: flex;
    align-self: flex-end;
+}
+.bannerTitle button {
+   display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: row;
