@@ -11,14 +11,14 @@
    justify-items: center;
    align-items: center;
    gap: 1.1em;
-   bottom: 20px;
+   margin-bottom: 70px;
 }
 
 /* Responsive */
 @media (min-width: 1440px) {
    .container {
-      grid-template-columns: repeat(5,210px);
-      grid-template-rows: 300px;
+      grid-template-columns: repeat(5,220px);
+      grid-template-rows: 310px;
    }
 }
 

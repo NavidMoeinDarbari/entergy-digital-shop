@@ -4,42 +4,41 @@
    flex-direction: column;
    justify-content: center;
    right: 75px; top: 21px;
-   width: 110px; height: 40px;
+   height: 40px;
    min-width: 40px;
    background-color: rgb(15, 30, 49);
    border-radius: 1.4em;
-   padding-top: .3em;
-   padding: 0 .3em .5em .3em;
    box-shadow: 0px 4px 11px -7px black;
-   transition:all .3s;
+   transition: all .3s;
    overflow: hidden;
 } 
 .searchContainer:hover {
    background-color: rgb(27, 53, 87);
 }
-.searchContainer input {
+.searchContainer div {
+   width: 100%; height: 100%;
+   display: flex; justify-content: center; align-items: center;
+   padding: 0 4px;
+   gap: 10px;
+   flex-direction: row;
+}
+.searchContainer div input {
    background-color: transparent;
    color: white;
    overflow: hidden;
-   position: absolute;
-   right: 45px; top: 10px;
    border: none; outline: none;
    text-align: right;
    direction: rtl;
    font-family: 'Vazir';
    font-size: .9rem;
-   padding-bottom: .1em;
 }
 .searchContainer input::placeholder {
    color: rgb(207, 207, 207);
 }
-.searchContainer img {
+.searchContainer div img {
    transition: .7s;
-   position: absolute;
-   right: 4px; top: 4px;
    width: 32px;
 }
-
 .searchResults {
    cursor: pointer;
    display: flex;
@@ -83,7 +82,7 @@ a {
    text-align: left;
    display: flex; 
    justify-content: center; align-items: center;
-   padding-left: .3em;
+   padding-left: 8px;
 }
 .itemTitle h3 {
    font-size: .75rem;
@@ -95,6 +94,30 @@ a {
 }
 
 /* Responsive */
+@media (min-width: 1440px) {
+   .searchContainer {
+      right: 85px; top: 21px;
+      height: 50px;
+      min-width: 50px;
+      border-radius: 1.8em;   
+   } 
+   .searchContainer div {
+      padding: 0 5px;
+   }
+   .searchContainer div input {
+      font-size: 1rem;
+   }
+   .searchContainer div img {
+      width: 41px;
+   }
+   .searchResults {
+      right: 85px; top: 85px;
+      width: 250px;
+   }
+   .itemTitle h3 {
+      font-size: .85rem;
+   }
+}
 @media (max-width: 768px) {
    .searchContainer {
       right: 68px;

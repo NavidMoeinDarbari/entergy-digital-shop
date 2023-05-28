@@ -1,6 +1,6 @@
 .bannerContainer{
    width: 100%;
-   max-height: 900px;
+   max-height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -9,12 +9,14 @@
 }
 .bannerContainer img{
    width: 100%;
+   object-fit: cover;
    filter: brightness(100%);
 }
 .bannerTitle {
    position: absolute;
-   right: 12%;
-   top: 195px;
+   right: 0; left: 0;
+   margin-right: 12%;
+   margin-left: auto;
    max-width: 500px;
    min-width: 240px;
    height: auto;
@@ -28,20 +30,18 @@
    width: 100%;
    font-family: 'Cinema';
    font-weight: 300;
-   font-size: 4.1rem;
+   font-size: 3.5rem;
    color: rgb(15, 30, 49);
    direction: rtl;
 }
 .bannerTitle p {
    width: 100%;
    height: auto;
-   line-height: 2em;
+   line-height: 1.8em;
    direction: rtl;
    letter-spacing: .2px;
-   font-size: 1.04rem;
+   font-size: 1rem;
    font-weight: 400;
-   /* right: 160px;
-   top: 320px; */
    font-family: 'Vazir';
    color: rgb(41, 41, 41);
 }
@@ -60,33 +60,47 @@
    box-shadow: 0px 4px 12px -7px black;
    color: white;
    font-family: 'Cinema';
-   font-size: 1.3rem;
+   font-size: 1.2rem;
    font-weight: 100;
    border: none;
    border-radius: 15px;
-   width: 160px;
+   width: 150px;
    height: 45px;
    transition: .2s;
    cursor: pointer;
    
 }
-.bannerTitle button:hover {
-   background-color: rgb(15,30,49);
-}
 .bannerContainer button img {
    width: 22px;
+}
+.bannerTitle button:hover {
+   background-color: rgb(15,30,49);
 }
 .searchContainer:hover {
    background-color: rgb(220, 205, 255);
 }
 
-.imgContainer {
-   width: 13%;
-   display: flex;
-   justify-content: center; align-items: center;
+@media (min-width: 1440px) {
+   .bannerTitle {
+      max-width: 650px;
+      min-width: 240px;
+   }
+   .bannerTitle h1{
+      font-size: 5rem;
+   }
+   .bannerTitle p {
+      font-size: 1.3rem;
+   }
+   .bannerTitle button {
+      font-size: 1.5rem;
+      border-radius: 20px;
+      width: 190px;
+      height: 60px;
+   }
+   .bannerContainer button img {
+      width: 24px;
+   }
 }
-
-
 @media (max-width: 1024px) {
    .bannerContainer {
       height: 100vh;
@@ -107,6 +121,7 @@
       font-size: 1.2rem;
       margin-top: .8em;
    }
+   
 }
 @media (max-width: 535px) {
    .bannerTitle {

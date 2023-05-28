@@ -48,7 +48,15 @@
 }
 
 /* Responsive */
-
+@media (min-width: 1440px) {
+   .container h2{
+      font-size: 1.3rem;
+   }
+   .imgContainer {
+      width: 100%;
+      height: 45%;
+   }
+}
 @media (max-width: 525px) {
    .container h2{
       font-size: 1rem;

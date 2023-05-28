@@ -43,7 +43,14 @@ const Ul = styled.ul`
          transform: ${props => props.open ? 'rotate(45deg)':'rotate(0)'};
       }
    }
-
+   @media (min-width: 1440px) {
+      width: 50px;
+      height: 50px;
+      div {
+         width: 25px;
+         height: 3px; 
+      }
+   }
    @media (max-width: 768px) {
       right: ${props => props.open ? '150px':'18px'};
    }

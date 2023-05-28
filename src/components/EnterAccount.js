@@ -35,6 +35,17 @@ const MainDiv = styled.div`
       font-family: 'KoohNoor';
       font-size: .9rem;
    }
+   @media (min-width: 1440px) {
+      width: 160px;
+      height: 50px;
+      img {
+         width: 35px;
+      }
+      h3 {
+         font-size: 1rem;
+         right: 13px;
+      }
+   }
    @media (max-width: 525px) {
       width: 40px;
       h3 {

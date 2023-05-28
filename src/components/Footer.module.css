@@ -84,13 +84,16 @@
    display: flex;
    flex-direction: row;
    justify-content: right;
+   gap: 20px;
    width: 100%;
-   height: 65px;
+   height: 40px;
+   margin-top: 10px;
 }
 .icons div {
    display: flex; justify-content: right; align-items: center;
-   width: 20%;
+   width: auto;
    height: 100%;
+   cursor: pointer;
 }
 .icons div img {
    max-width: 100%;
@@ -123,7 +126,34 @@
 }
 
 /* Responsive */
-
+@media (min-width: 1440px) {
+   .footerContainer {
+      padding: 3em 8em;
+   }
+   .descriptionPart p {
+      font-size: 1rem;
+      line-height: 1.9em;
+   }
+   .categoryPart h2 {
+      font-size: 1.4rem;
+   }
+   .categoryPart p {
+      font-size: 1.1rem;
+   }
+   .categories {
+      height: 150px;
+      gap: .4em;
+   }
+   .categories li {
+      font-size: 1.2rem;
+   }
+   .icons {
+      height: 40px;
+   }
+   .logoPart h2 {
+      font-size: 1.4rem;
+   }
+}
 @media (max-width: 1024px) {
    .logoPart {
       display: none;

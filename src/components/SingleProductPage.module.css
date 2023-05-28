@@ -9,9 +9,10 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    width: 80%;
-   gap: 7px;
-   height: auto;
+   max-width: 1200px;
+   gap: 17px;
 }
 .infoContainer {
    width: 100%;
@@ -20,9 +21,9 @@
    gap: 8px;
    direction: rtl;
    flex-direction: row;
-   border-radius: 13px 13px 0 0;
+   border-radius: 13px;
    background-color: #fff;
-   /* box-shadow: 0px 6px 13px -9px rgb(20, 20, 20); */
+   box-shadow: 0px 2px 20px -12px rgb(0, 0, 0);
 }
 .imagePart {
    width: 35%;
@@ -106,9 +107,6 @@
 .dollarSign {
    font-size: .8rem;
 }
-.icon {
-   width: 20px;
-}
 .divider {
    position: absolute;
    background-color: rgba(0, 0, 0, 0.220);
@@ -175,15 +173,16 @@
    display: flex;
    flex-direction: row;
    font-family: 'Vazir';
-   gap: 7px;
+   gap: 15px;
    width: 100%;
 }
 .descriptionPart , .noticePart {
    padding: 1em;
    height: max-content;
    display: flex; flex-direction: column;
-   border-radius: 0 0 13px 13px;
+   border-radius: 13px;
    background-color: rgb(255, 255, 255);
+   box-shadow: 0px 2px 20px -12px rgb(0, 0, 0);
 }
 .descriptionPart {
    width: 66%;
@@ -226,8 +225,10 @@
    grid-template-columns: repeat(5,1fr);
    width: 100%;
    padding: 15px 20px;
+   border-radius: 13px;
    gap: 5px;
    background-color: #fff;
+   box-shadow: 0px 2px 20px -12px rgb(0, 0, 0);
 }
 .shopServicesContainer div {
    display: flex; flex-direction: row;
@@ -239,7 +240,7 @@
 }
 .shopServicesContainer div img {
    width: 25px;
-   opacity: 85%;
+   opacity: 90%;
 }
 .shopServicesContainer div p {
    font-size: .75rem;
@@ -250,7 +251,67 @@
 
 
 /* Responsive */
-
+@media (min-width: 1440px) {
+   .infoPart h2 {
+      font-size: 1.4rem;
+   }  
+   .infoPart ul {
+      gap: 3px;
+   }
+   .infoPart li {
+      font-size: 1rem;
+      background-size: 18px;
+      padding: 0 26px;
+   }
+   .votesCount {
+      font-size: .9rem;
+   }
+   .rate {
+      font-size: 1.3rem;
+   }
+   .price {
+      font-size: 1.3rem;
+   }
+   .dollarSign {
+      font-size: .9rem;
+   }
+   .count button {
+      width: 170px;
+      font-size: 1.1rem;
+      border-radius: 15px;
+   }
+   .count img {
+      width: 35px;
+      height: 35px;
+   }
+   .count p {
+      width: 60px;
+      height: 30px;
+      font-size: 1.2rem;
+   }
+   .noticePart img {
+      width: 25px;
+      height: 25px;
+   }
+   .noticePart p {
+      font-size: 1rem;
+   }
+   .descriptionPart {
+      gap: 20px;
+   }
+   .descriptionPart h2 {
+      font-size: 1.1rem;
+   }
+   .descriptionPart p {
+      font-size: 1.1rem;
+   }
+   .shopServicesContainer div img {
+      width: 30px;
+   }
+   .shopServicesContainer div p {
+      font-size: .85rem;
+   }
+}
 @media (max-width: 1024px) {
    .productContainer {
       width: 90%;

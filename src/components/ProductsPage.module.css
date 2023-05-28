@@ -30,7 +30,11 @@
 }
 
 /* Responsive */
-
+@media (min-width: 1440px) {
+   .productsContainer {
+      grid-template-columns: repeat(5,230px);
+   }
+}
 @media (max-width: 1024px) {
    .productsContainer {
       grid-template-columns: repeat(3,230px);

@@ -47,9 +47,11 @@ const SearchButton = () => {
 
    return (
       <>
-         <div className={styles.searchContainer} style={{width: isActive ? '200px':'110px'}}>
-            <img src={SearchIcon} />
-            <input type='text' placeholder='جستجو' ref={input} onChange={(event) => setValue(event.target.value)}/>
+         <div className={styles.searchContainer} style={{width: isActive ? '200px':'130px'}}>
+            <div>
+               <input type='text' placeholder='جستجو' ref={input} onChange={(event) => setValue(event.target.value)}/>
+               <img src={SearchIcon} />
+            </div>
          </div>
          {isActive && searchedItems.length &&
             <div  className={styles.searchResults}>

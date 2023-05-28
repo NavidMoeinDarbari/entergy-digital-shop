@@ -8,6 +8,8 @@
 .formContainer {
    width: 60%;
    height: fit-content;
+   background-color: #fff;
+   box-shadow: 0px 2px 20px -13px rgb(0, 0, 0);
    display: flex; flex-direction: row; justify-content: center; align-items: center;
    border-radius: 15px;
    padding: 5px 0;
@@ -18,7 +20,7 @@
    width: 60%;
    height: 100%;
    display: flex; flex-direction: column; justify-content: center; align-items: center;
-   gap: 1em;
+   gap: 1.2em;
    font-family: 'Lalezar';
    position: relative;
 }
@@ -43,7 +45,6 @@
    color: rgb(24, 44, 71);
 }
 .inputContainer {
-   /* background-color: #fff; */
    width: 80%;
    height: auto;
    display: flex; flex-direction: column;
@@ -64,7 +65,7 @@
    font-weight: 400;
    padding: 0 .5em;
    display: flex; justify-content: center; align-items: center;
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(238, 229, 252);
    border-radius: .5em;
    cursor: text;
 }
@@ -130,7 +131,7 @@
 .buttonContainer button , .loginButtonContainer button {
    width: 60%;
    height: 40px;
-   border-radius: 12px;
+   border-radius: 15px;
    border: none;
    font-size: 1.1rem;
    font-family: 'KoohNoor';
@@ -171,7 +172,7 @@
 .divider {
    position: absolute;
    left: 5px;
-   width: 1px; height: 82%;
+   width: 1px; height: 100%;
    background-color: rgb(198, 198, 198);
 }
 
@@ -201,7 +202,39 @@
    color: blue;
 }
 
+/* Responsive  */
 
+@media (min-width: 1440px) {
+   .loginFormPart h2 , .formPart h2 {
+      font-size: 2.1rem;
+   }
+   .inputContainer {gap: .8em;}
+   .inputContainer label {
+      font-size: 1.2rem;
+   }
+   .inputContainer input {
+      height: 32px;
+      font-size: 1.3rem;
+   }
+   .inputContainer span {
+      font-size: .95rem;
+   }
+   .checkboxContainer label {
+      font-size: 1.1rem;
+   }
+   .checkboxContainer span {
+      font-size: 1.5rem;
+   }
+   .buttonContainer button , .loginButtonContainer button {
+      width: 60%;
+      height: 50px;
+      font-size: 1.3rem;
+   }
+   .loginButtonContainer a {font-size: 1.2rem;}
+   .loginButtonContainer p {font-size: 1.2rem;}
+   .bannerPart p {font-size: 1.2rem;}
+   .bannerPart a {font-size: 1.2rem;}
+}
 @media (max-width: 1024px) {
    .formContainer {
       width: 75%;

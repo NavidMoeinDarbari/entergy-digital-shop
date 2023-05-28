@@ -42,10 +42,7 @@
    width: 200px;
 }
 .container::-webkit-scrollbar , .loaderContainer::-webkit-scrollbar {
-   width: 200px;
-   height: 8px;
-   background-color: #d7cce6;
-   border-radius: 10px;
+   display: none;
 }
 .container::-webkit-scrollbar-thumb , .loaderContainer::-webkit-scrollbar-thumb {
    background-color: rgba(15, 30, 49, 0.273);
@@ -104,6 +101,14 @@
    width: 14px;
 }
 
+/* Responsive */
+
+@media (min-width: 1440px) {
+   .arrowsContainerRight , .arrowsContainerLeft {
+      width: 55px;
+      height: 55px;
+   }
+}
 @media (max-width: 1200px) {
    .container {
       grid-template-columns: repeat(4,1fr);
