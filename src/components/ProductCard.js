@@ -18,7 +18,7 @@ import StarIcon from '../Icons/star (2).svg';
 
 
 const Card = styled.div`
-   width: 230px;
+   width: 220px;
    height: 360px;
    background-color: white;
    border-radius: 15px;
@@ -28,10 +28,23 @@ const Card = styled.div`
    a {
       text-decoration: none;
    }
-   @media (max-width: 450px) {
-      width: 215px;
-      height: 320px;
+   @media (max-width: 600px) {
+      /* width: 170px; */
+      width: 94%;
+      height: 287px;
    }
+   @media (max-width: 350px) {
+      width: 70%;
+   }
+   /* @media (max-width: 445px) { */
+      /* width: 150px;
+      height: 232px; */
+      /* width: 180px;
+      height: 268px; */
+   /* } */
+   /* @media (max-width: 370px) {
+      
+   } */
 `
 const ProductCard = (props) => {
 

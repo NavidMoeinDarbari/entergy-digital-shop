@@ -44,7 +44,7 @@
    justify-content: space-between;
    gap: .8em;
    padding: 25px 15px 15px 24px;
-   font-family: 'KoohNoor';
+   font-family: 'YekanBakh';
    direction: rtl;
 }
 .infoPart h2 {
@@ -68,8 +68,8 @@
 }
 .infoPart li {
    color: rgba(0, 0, 0, 0.894);
-   font-weight: 600;
-   font-size: .85rem;
+   font-weight: 500;
+   font-size: .95rem;
    width: 100%; height: 30px;
    display: flex;
    align-items: center;
@@ -119,7 +119,7 @@
    align-items: center;
    justify-content: left;
    width: 100%;
-   height: 45px;
+   height: 40px;
 }
 .count button {
    cursor: pointer;
@@ -129,16 +129,16 @@
    border: none;
    height: 100%;
    min-height: 40px;
-   font-family: 'KoohNoor';
-   font-weight: 400;
-   font-size: 1rem;
+   font-family: 'YekanBakh';
+   font-weight: 500;
+   font-size: 1.1rem;
    background-color: #4A445E;
-   letter-spacing: .2px;
    width: 160px;
-   min-width: 150px;
+   min-width: 140px;
+   padding-top: 2px;
    color: #ffffff;
    transition: .3s;
-   border-radius: 13px;
+   border-radius: 10px;
    box-shadow: 0px 2px 8px -4px black;
 }
 .buttonContainer button:hover {
@@ -148,8 +148,8 @@
    display: flex; flex-direction: row;
    justify-content: right; align-items: center;
    width: auto; height: 100%;
-   font-family: 'KoohNoor';
-   gap: 4px;
+   font-family: 'YekanBakh';
+   gap: 0px;
 }
 
 .count img {
@@ -160,10 +160,10 @@
 .count p {
    width: 55px;
    height: 28px;
+   padding-top: 8px;
+   font-size: 1.1rem;
    display: flex; justify-content: center; align-items: center;
-   background-color: #d5d5fe;
    color: black;
-   border-radius: .4em;
 }
 
 .deactived {
@@ -202,16 +202,16 @@
 .noticePart p {
    font-size: .92rem;
    line-height: 25px;
-   color: #444444;
+   color: #242424;
    text-align: justify;
-   font-family: 'B Mitra';
-   font-weight: 600;
+   font-family: 'YekanBakh';
+   font-weight: 500;
 }
 .descriptionPart h2 {
-   font-size: .9rem;
+   font-size: 1rem;
    color: rgb(0, 0, 0);
    direction: rtl;
-   font-family: 'KoohNoor';
+   font-family: 'YekanBakh';
 }
 .descriptionPart p {
    font-size: 1rem;
@@ -235,7 +235,7 @@
    justify-content: center;
    align-items: center;
    direction: rtl;
-   font-family: 'KoohNoor';
+   font-family: 'YekanBakh';
    gap: 7px;
 }
 .shopServicesContainer div img {
@@ -243,7 +243,7 @@
    opacity: 90%;
 }
 .shopServicesContainer div p {
-   font-size: .75rem;
+   font-size: .8rem;
    line-height: 15px;
    height: fit-content;
    color: #000000;
@@ -251,6 +251,7 @@
 
 
 /* Responsive */
+
 @media (min-width: 1440px) {
    .infoPart h2 {
       font-size: 1.4rem;
@@ -277,8 +278,7 @@
    }
    .count button {
       width: 170px;
-      font-size: 1.1rem;
-      border-radius: 15px;
+      font-size: 1.2rem;
    }
    .count img {
       width: 35px;
@@ -309,7 +309,7 @@
       width: 30px;
    }
    .shopServicesContainer div p {
-      font-size: .85rem;
+      font-size: .9rem;
    }
 }
 @media (max-width: 1024px) {
@@ -328,7 +328,7 @@
       width: 40%;
    }
    .infoPart li {
-      font-size: .8rem;
+      font-size: .9rem;
    }
    .votesCount {
       font-size: .9rem;
@@ -340,7 +340,7 @@
       font-size: 1.1rem;
    }
    .buttonContainer button {
-      font-size: .9rem;
+      font-size: 1.05rem;
    }
    .shopServicesContainer {
       width: 100%;
@@ -351,7 +351,7 @@
       opacity: 85%;
    }
    .shopServicesContainer div p {
-      font-size: .7rem;
+      font-size: .75rem;
       color: #222222;
    }
 }
@@ -385,11 +385,9 @@
    }
    .descriptionPart , .noticePart{
       width: 100%;
-      border-radius: 0;
    }
    .shopServicesContainer {
       order: 1;
-      border-radius: 0 0 13px 13px;
       gap: 5px;
    }
    .divider {
@@ -427,6 +425,7 @@
       justify-content: center;
       padding: 0;
    }
+   .count button {width: 200px;}
 }
 @media (max-width:525px) {
    .descriptionPart p {
@@ -436,7 +435,7 @@
 }
 @media (max-width:450px) {
    .infoPart {
-      padding: 20px 15px 22px 24px;
+      padding: 20px 15px 22px 15px;
    }
    .count button {
       min-height: 35px;

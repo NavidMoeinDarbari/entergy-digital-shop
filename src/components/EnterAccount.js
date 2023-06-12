@@ -29,11 +29,11 @@ const MainDiv = styled.div`
    }
    h3 {
       position: absolute;
-      right: 12px;
+      right: 15px;
       color: white;
       font-weight: 400;
-      font-family: 'KoohNoor';
-      font-size: .9rem;
+      font-family: 'YekanBakh';
+      font-size: 1rem;
    }
    @media (min-width: 1440px) {
       width: 160px;
@@ -42,8 +42,8 @@ const MainDiv = styled.div`
          width: 35px;
       }
       h3 {
-         font-size: 1rem;
-         right: 13px;
+         font-size: 1.2rem;
+         right: 15px;
       }
    }
    @media (max-width: 525px) {

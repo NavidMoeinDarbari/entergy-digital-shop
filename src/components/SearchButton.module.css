@@ -29,8 +29,8 @@
    border: none; outline: none;
    text-align: right;
    direction: rtl;
-   font-family: 'Vazir';
-   font-size: .9rem;
+   font-family: 'YekanBakh';
+   font-size: 1rem;
 }
 .searchContainer input::placeholder {
    color: rgb(207, 207, 207);
@@ -94,6 +94,7 @@ a {
 }
 
 /* Responsive */
+
 @media (min-width: 1440px) {
    .searchContainer {
       right: 85px; top: 21px;
@@ -105,7 +106,7 @@ a {
       padding: 0 5px;
    }
    .searchContainer div input {
-      font-size: 1rem;
+      font-size: 1.1rem;
    }
    .searchContainer div img {
       width: 41px;
@@ -126,10 +127,14 @@ a {
 @media (max-width:415px) {
    .searchContainer {
       right: 65px;
-      max-width: 125px;
    }
    .searchResults {
       right: 50px;
       padding: .4em .3em;
+   }
+}
+@media (max-width: 325px) {
+   .searchContainer { 
+      max-width: 115px;
    }
 }

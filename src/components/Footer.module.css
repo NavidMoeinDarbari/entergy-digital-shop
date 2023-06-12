@@ -2,7 +2,7 @@
    width: 100%;
    height: auto;
    background-color: rgb(15,30,49);
-   margin-top: 7em;
+   margin-top: 9em;
    padding: 3em 4em;
    display:flex;
    flex-direction: row;
@@ -32,9 +32,9 @@
 .descriptionPart p {
    width: 100%;
    height: 70%;
-   font-family: 'KoohNoor';
-   font-weight: 100;
-   font-size: .95rem;
+   font-family: 'YekanBakh';
+   font-weight: 300;
+   font-size: 1.05rem;
    color: white;
    text-align: justify;
    line-height: 1.8em;
@@ -49,33 +49,35 @@
    gap: .2em;
 }
 .categoryPart h2 {
-   font-family: 'Lalezar';
+   font-family: 'YekanBakh';
    font-size: 1.3rem;
+   font-weight: 600;
    width: 100%;
    height: fit-content;
    text-align: right;
    color: rgb(248, 248, 248);
-   font-weight: 100;
 }
 .categoryPart p {
    width: 100%;
    padding: .5em 0;
    color: rgb(248, 248, 248);
-   font-family: 'Lalezar';
+   font-family: 'YekanBakh';
+   font-size: .9rem;
 }
 .categories {
    width: 100%;
    height: 130px;
    display: flex;
    flex-direction: column;
-   gap: .5em;
+   gap: .4em;
    list-style: square;
-   padding: 0 1.2em;
+   padding: .3em 1.2em 0 1.2em;
 }
 .categories li {
-   font-family: 'Lalezar';
-   font-size: 1.1rem;
-   color: rgb(223, 203, 255);   
+   font-family: 'YekanBakh';
+   font-size: 1rem;
+   color: rgb(223, 203, 255); 
+   font-weight: 500;  
 }
 .categories a{
    color: rgb(159, 159, 255);
@@ -84,10 +86,10 @@
    display: flex;
    flex-direction: row;
    justify-content: right;
-   gap: 20px;
+   gap: 10px;
    width: 100%;
-   height: 40px;
-   margin-top: 10px;
+   height: 60px;
+   padding: 10px 0;
 }
 .icons div {
    display: flex; justify-content: right; align-items: center;
@@ -107,13 +109,13 @@
    gap: 1em;
 }
 .logoPart h2 {
-   font-family: 'Lalezar';
+   font-family: 'YekanBakh';
    font-size: 1.3rem;
+   font-weight: 600;
    width: 100%;
    height: fit-content;
    text-align: right;
    color: rgb(248, 248, 248);
-   font-weight: 100;
 }
 .logoPart div {
    width: 100%;
@@ -131,8 +133,7 @@
       padding: 3em 8em;
    }
    .descriptionPart p {
-      font-size: 1rem;
-      line-height: 1.9em;
+      font-size: 1.2rem;
    }
    .categoryPart h2 {
       font-size: 1.4rem;
@@ -146,9 +147,6 @@
    }
    .categories li {
       font-size: 1.2rem;
-   }
-   .icons {
-      height: 40px;
    }
    .logoPart h2 {
       font-size: 1.4rem;
@@ -190,7 +188,7 @@
    }
    .icons {
       align-items: center;
-      font-family: 'Lalezar';
+      font-family: 'YekanBakh';
       border-bottom: 1px solid rgb(92, 92, 92);
    }
    .icons::before {
@@ -200,8 +198,8 @@
       margin-left: .7em;
    }
    .icons div img {
-      max-width: 85%;
-      max-height: 85%;
+      max-width: 90%;
+      max-height: 90%;
    }
 }
 @media (max-width: 850px) {
@@ -210,7 +208,7 @@
       gap: 3em;
    }
    .descriptionPart p {
-      font-size: .9rem;
+      font-size: 1.05rem;
       line-height: 1.7em;
    }
    .icons::before {
@@ -249,9 +247,7 @@
    }
    .icons {
       width: 100%;
-      height: 60px;
       justify-content: right;
-      gap: 10px;
    }
    .categoryPart::after {
       width: 160px;
@@ -262,8 +258,8 @@
       width: 50px;
    }
    .icons div img {
-      max-width: 100%;
-      max-height: 100%
+      max-width: 95%;
+      max-height: 95%
    }
 }
 @media (max-width: 525px) {
@@ -282,7 +278,7 @@
       gap: 3px;
    }
    .categories li {
-      font-size: 1rem;
+      font-size: .95rem;
    }
    .categoryPart p {
       display: none;
@@ -295,7 +291,7 @@
       width: 130px; height: 70px;
    }
    .descriptionPart p {
-      font-size: .8rem;
+      font-size: .95rem;
       color: white;
       text-align: justify;
       line-height: 2em;

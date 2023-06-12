@@ -17,7 +17,8 @@
    right: 0; left: 0;
    margin-right: 12%;
    margin-left: auto;
-   max-width: 500px;
+   width: 500px;
+   max-width: 80%;
    min-width: 240px;
    height: auto;
    display: flex;
@@ -33,16 +34,19 @@
    font-size: 3.5rem;
    color: rgb(15, 30, 49);
    direction: rtl;
+   margin-bottom: 10px;
+}
+.bannerTitle h1 br {
+   display: none;
 }
 .bannerTitle p {
    width: 100%;
    height: auto;
    line-height: 1.8em;
    direction: rtl;
-   letter-spacing: .2px;
-   font-size: 1rem;
-   font-weight: 400;
-   font-family: 'Vazir';
+   font-size: 1.05rem;
+   font-weight: 500;
+   font-family: 'YekanBakh';
    color: rgb(41, 41, 41);
 }
 .bannerTitle a {
@@ -59,16 +63,16 @@
    background-color: #4e4a6a;
    box-shadow: 0px 4px 12px -7px black;
    color: white;
-   font-family: 'Cinema';
-   font-size: 1.2rem;
-   font-weight: 100;
+   font-family: 'YekanBakh';
+   font-size: 1.1rem;
+   font-weight: 500;
+   padding: 9px 0 7px 0;
    border: none;
    border-radius: 15px;
    width: 150px;
-   height: 45px;
+   /* height: 45px; */
    transition: .2s;
    cursor: pointer;
-   
 }
 .bannerContainer button img {
    width: 22px;
@@ -82,14 +86,13 @@
 
 @media (min-width: 1440px) {
    .bannerTitle {
-      max-width: 650px;
-      min-width: 240px;
+      width: 650px;
    }
    .bannerTitle h1{
-      font-size: 5rem;
+      font-size: 5.3rem;
    }
    .bannerTitle p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
    }
    .bannerTitle button {
       font-size: 1.5rem;
@@ -107,18 +110,18 @@
       justify-content: start;
       padding-top: 10em;
    }
-   .bannerContainer img{
+   .bannerPhoto{
       display: none;
    }
    .bannerTitle {
       position: static;
-      width: 500px;
       height: auto;
+      margin: 0 auto;
    }
    .bannerTitle button {
       width: 150px;
       height: 40px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-top: .8em;
    }
    
@@ -131,14 +134,16 @@
    .bannerTitle h1{
       font-size: 3.5em;
    }
+   .bannerTitle h1 br {
+      display: block;
+   }
    .bannerTitle p{
-      font-size: .95rem;
+      font-size: 1.1rem;
       line-height: 1.7em;
       text-align: justify;
       letter-spacing: 0;
    }
-   .bannerTitle button {
-   }
+   
 }
 @media (max-width: 490px) {
    .bannerTitle h1 {
@@ -147,14 +152,22 @@
 }
 @media (max-width: 420px) {
    .bannerTitle p {
-      font-size: .9rem;
+      font-size: 1.1rem;
    }
    .bannerTitle h1 {
-      font-size: 2.8rem;
+      font-size: 2.9rem;
    }
 }
 @media (max-width: 395px) {
    .bannerTitle h1 {
-      font-size: 2.6rem;
+      font-size: 2.7rem;
+   }
+}
+@media (max-width: 350px) {
+   .bannerTitle p {
+      font-size: .9rem;
+   }
+   .bannerTitle h1 {
+      font-size: 2.5rem;
    }
 }

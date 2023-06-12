@@ -2,14 +2,14 @@ import React from 'react';
 //Components
 import Banner from "./Banner";
 import MainProducts from "./MainProducts";
-import Main from './Category';
+import Category from './Category';
 
 const LandingPage = () => {
 
    return (
-      <div>
+      <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center' , alignItems:'center'}}>
          <Banner/>
-         <Main/>
+         <Category/>
          <MainProducts/>
       </div>
    );

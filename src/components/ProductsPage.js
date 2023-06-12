@@ -17,7 +17,7 @@ const ProductsPage = () => {
    const productsState = useSelector(state => state.productsState)
 
    useEffect(()=> {
-      if(!productsState.products.length) dispatch(fetchProducts())
+      if(!productsState.products) dispatch(fetchProducts())
    }, [])
 
    return (

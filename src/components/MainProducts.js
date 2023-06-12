@@ -10,6 +10,7 @@ import leftArrow from '../Icons/arrow-left_1_.svg';
 import rightArrow from '../Icons/arrow-right (1).svg';
 import goToArrow from '../Icons/arrow (1).svg';
 import Loader from '../Icons/loader (1).gif';
+import HeaderLeftArrow from '../Icons/left-arrow (1).svg';
 
 const MainProducts = () => {
    
@@ -37,16 +38,18 @@ const MainProducts = () => {
       <>
          <div className={styles.mainProducts}>
             <div className={styles.headerTitles}>
-               <p> جدید ترین محصولات و پیشنهاد ها</p>
+               <img src={HeaderLeftArrow}/>
+               <h2> جدید ترین محصولات</h2>
+               <span></span>
                <Link to="/products"><p><img src={goToArrow}/>مشاهده همه</p></Link>
             </div>
             <div className={styles.carrousel}>
                <div className={styles.arrowsContainerRight} onClick={() => scrollHandler('right')}>
                   <img src={rightArrow}/>
                </div>
-               <div ref={carrousel} className={allProducts.length ? styles.container : styles.loaderContainer}>
+               <div ref={carrousel} className={allProducts ? styles.container : styles.loaderContainer}>
                   {
-                     allProducts.length ? allProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
+                     allProducts ? allProducts.map(product => <ProductCard key={product.id} src={product.image} alt={product.title} title={product.title} price={product.price} category={product.category} productNumber={product.id.toString()} productData={product} id={product.id}/>
                      ) : 
                      <div  className={styles.loader}>
                         <img src={Loader}/>

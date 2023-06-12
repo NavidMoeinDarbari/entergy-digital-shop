@@ -47,13 +47,13 @@ const SearchButton = () => {
 
    return (
       <>
-         <div className={styles.searchContainer} style={{width: isActive ? '200px':'130px'}}>
+         <div className={styles.searchContainer} style={{width: isActive ? '180px':'125px'}}>
             <div>
-               <input type='text' placeholder='جستجو' ref={input} onChange={(event) => setValue(event.target.value)}/>
+               <input type='text' placeholder='جستجو' value={value} ref={input} onChange={(event) => setValue(event.target.value)}/>
                <img src={SearchIcon} />
             </div>
          </div>
-         {isActive && searchedItems.length &&
+         {isActive && searchedItems.length > 0 &&
             <div  className={styles.searchResults}>
                {
                   searchedItems.reverse().map( element => 

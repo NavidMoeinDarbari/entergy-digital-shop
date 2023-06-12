@@ -25,9 +25,9 @@ const Footer = () => {
                <h2>بخش های سایت</h2>
                <ul className={styles.categories}>
                   <li><Link to='/products'>محصولات</Link></li>
-                  <li><Link to='/discounts'>ها تخفیف</Link></li>
+                  <li><Link to='/discounts'>تخفیف ها</Link></li>
                   <li><Link to='/document'>راهنما</Link></li>
-                  <li><Link to='/aboutus'> ما درباره</Link></li>
+                  <li><Link to='/aboutus'>درباره ما</Link></li>
                </ul>
                <p>برای اطلاع از جدید ترین  محصولات ما را در شبکه ها اجتماعی دنبال کنید :</p>
                <div className={styles.icons}>

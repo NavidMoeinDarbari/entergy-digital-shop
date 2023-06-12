@@ -18,7 +18,6 @@ const Header = () => {
 
    return (
       <header className={styles.header}>
-         <BurgerButton/>
          <nav className={styles.nav}>
             <ul>
                <Link to='/'><li>خانه</li></Link>
