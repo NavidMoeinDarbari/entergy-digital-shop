@@ -129,6 +129,9 @@
    
 }
 @media (max-width: 535px) {
+   .bannerContainer {
+      align-items: start;
+   }
    .bannerTitle {
       width: 80%;
       justify-content: right;

@@ -11,8 +11,8 @@ const titleSplitter = (title, type) => {
       const finalTitle = newTitle.concat(' ...') 
       return finalTitle
    }
-   else if(type === 'expanded' && splittedTitle.length > 13) {
-      splittedTitle.length = 11
+   else if(type === 'expanded' && splittedTitle.length > 12) {
+      splittedTitle.length = 8
       const newTitle = splittedTitle.join(' ');
       const finalTitle = newTitle.concat('...') 
       return finalTitle
