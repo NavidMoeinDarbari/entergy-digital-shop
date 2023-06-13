@@ -3,10 +3,12 @@
    min-height: 100vh;
    display: flex;justify-content: center; align-items: center;
    direction: rtl;
+   max-width: 1400px;
 }
 .formContainer {
    width: 60%;
-   height: fit-content;
+   height: auto;
+   min-height: 460px;
    background-color: #fff;
    box-shadow: 0px 2px 20px -13px rgb(0, 0, 0);
    display: flex; flex-direction: row; justify-content: center; align-items: center;
@@ -202,7 +204,7 @@
 
 /* Responsive  */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
    .loginFormPart h2 , .formPart h2 {
       font-size: 2.1rem;
    }
@@ -232,7 +234,7 @@
    .loginButtonContainer p {font-size: 1.4rem;}
    .bannerPart p {font-size: 1.4rem;}
    .bannerPart a {font-size: 1.4rem;}
-}
+} */
 @media (max-width: 1024px) {
    .formContainer {
       width: 75%;
@@ -244,7 +246,6 @@
 }
 @media (max-width: 768px) {
    .formContainer {
-      width: 80%;
       height: fit-content;
       flex-direction: column;
       padding: 25px 0;
@@ -305,5 +306,11 @@
    }
    .loginButtonContainer button {
       width: 100%;
+   }
+}
+
+@media (max-height: 700px) {
+   .formContainer {
+      margin-top: 70px;
    }
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 //Styles
 import styles from './Banner.module.css';
 //Icons
-import BannerPic5 from '../images/My project.png';
+import BannerPic5 from '../images/My project 2.png';
 import Arrow from '../Icons/left-arrow-white.svg';
 
 class Banner extends Component {

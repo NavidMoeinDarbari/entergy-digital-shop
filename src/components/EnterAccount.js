@@ -10,7 +10,7 @@ const MainDiv = styled.div`
    height: 40px;
    position: absolute;
    left: 25px;
-   top: 21px;
+   top: 20px;
    background-color: rgb(15, 30, 49);
    box-shadow: 0px 4px 11px -7px black;
    border-radius: 1.5em;
@@ -35,7 +35,7 @@ const MainDiv = styled.div`
       font-family: 'YekanBakh';
       font-size: 1rem;
    }
-   @media (min-width: 1440px) {
+   /* @media (min-width: 1440px) {
       width: 160px;
       height: 50px;
       img {
@@ -45,7 +45,7 @@ const MainDiv = styled.div`
          font-size: 1.2rem;
          right: 15px;
       }
-   }
+   } */
    @media (max-width: 525px) {
       width: 40px;
       h3 {

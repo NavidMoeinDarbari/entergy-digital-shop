@@ -18,9 +18,9 @@ const Ul = styled.ul`
    gap: 3px;
    position: fixed;
    right: ${props => props.open ? '180px':'25px'};
-   top: 21px;
+   top: 20px;
    z-index: 10;
-   transition: .3s;
+   transition: .2s;
    cursor: pointer;
    :hover {
       background-color: rgb(27, 53, 87);
@@ -43,14 +43,14 @@ const Ul = styled.ul`
          transform: ${props => props.open ? 'rotate(45deg)':'rotate(0)'};
       }
    }
-   @media (min-width: 1440px) {
+   /* @media (min-width: 1440px) {
       width: 50px;
       height: 50px;
       div {
          width: 25px;
          height: 3px; 
       }
-   }
+   } */
    @media (max-width: 768px) {
       right: ${props => props.open ? '150px':'18px'};
    }

@@ -7,6 +7,7 @@
    padding-top: 2em;
    background-color: transparent;
    direction: rtl;
+   max-width: 1400px;
 }
 .carrousel {
    width: 90%;
@@ -114,14 +115,13 @@
 
 /* Responsive */
 
-@media (min-width: 1440px) {
-   .arrowsContainerRight , .arrowsContainerLeft {
-      width: 55px;
-      height: 55px;
+@media (min-width: 1300px) {
+   .container {
+      width: 85%;
    }
-   .headerTitles h2 {
+   /* .headerTitles h2 {
       font-size: 2.2rem;
-   }
+   } */
 }
 @media (max-width: 1200px) {
    .container {

@@ -29,22 +29,12 @@ const Card = styled.div`
       text-decoration: none;
    }
    @media (max-width: 600px) {
-      /* width: 170px; */
       width: 94%;
       height: 287px;
    }
    @media (max-width: 350px) {
       width: 70%;
    }
-   /* @media (max-width: 445px) { */
-      /* width: 150px;
-      height: 232px; */
-      /* width: 180px;
-      height: 268px; */
-   /* } */
-   /* @media (max-width: 370px) {
-      
-   } */
 `
 const ProductCard = (props) => {
 

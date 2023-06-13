@@ -9,6 +9,7 @@ import styles from './ShoppingCartPage.module.css';
 import CloseIcon from '../Icons/close-tick.svg';
 import PlusIcon from '../Icons/plus.svg';
 import MinusIcon from '../Icons/minus.svg';
+import titleSplitter from '../functions/titleSplitter';
 
 const ShoppingCartPage = () => {
 
@@ -56,7 +57,7 @@ const ShoppingCartPage = () => {
                         </section>
                         <section className={styles.infoPart}>
                            <div className={styles.info}>
-                              <h2>{item.title}</h2>
+                              <h2>{titleSplitter(item.title, 'expanded')}</h2>
                               <ul>
                                  <li className={styles.price}>قیمت محصول : <span>$</span> {item.price}</li>
                                  <li>گارانتی اصالت و سلامت فیزیکی کالا</li>

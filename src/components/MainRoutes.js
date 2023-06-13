@@ -13,7 +13,7 @@ import ShoppingCartPage from './ShoppingCartPage';
 
 const MainRoutes = () => {
    return (
-      <div>
+      <div style={{width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center'}}>
          <Switch>
             <Route path='/products/:key' component={SingleProductPage}/>
             <Route path='/products' component={ProductsPage} />

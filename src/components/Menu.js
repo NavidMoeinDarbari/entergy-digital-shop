@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 //Icon
@@ -10,7 +10,7 @@ const PageMenu = styled.div`
    height: 100vh;
    background-color: rgb(15,30,49);
    position: fixed;
-   display: flex;
+   display: ${props => props.isClosed ? 'flex' : 'none'};
    justify-content: center;
    align-items: center;
    border-right: 1px solid black;
@@ -18,18 +18,18 @@ const PageMenu = styled.div`
    right: -10px ;
    top: 0;
    z-index: 2;
-   transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
+   transform: ${props => props.isClosed ? 'translateX(0)' : 'translateX(100%)'};
    opacity: ${props => props.open ? '1' : '0'};
-   transition: all .3s;
+   transition: all .2s;
    ul{
       width: 100%;
       height: 100%;
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       text-align: right;
       padding: 40px 0 25px 0;
+      display: ${props => props.open ? 'flex' : 'none'};
    }
    ul div {
       width: 100%;
@@ -44,7 +44,7 @@ const PageMenu = styled.div`
       letter-spacing: .2px;
       color: rgb(244,244,244);
       width: 100%;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       padding: 10px 30px;
       transition: .2s;
       cursor: pointer;
@@ -74,16 +74,16 @@ const PageMenu = styled.div`
    button:hover {
       background-color: rgb(255, 0, 0, 0.3);
    }
-   @media (min-width: 1440px) {
+   /* @media (min-width: 1440px) {
       width: 265px;
       button img {
          width: 20px;
       }
-   }
+   } */
    @media (max-width: 768px) {
-      width: 215px;
+      /* width: 215px; */
+      width: ${props => props.open ? '215px' : '0'};
       ul li {
-         font-size: 1.1rem;
          padding: 10px 25px;
       }
       button {
@@ -92,10 +92,11 @@ const PageMenu = styled.div`
       }
    }
    @media (max-width: 415px) {
-      width: 185px;
+      /* width: 185px; */
+      width: ${props => props.open ? '185px' : '0'};
       ul li {
-         font-size: 1rem;
          padding: 10px 20px;
+         font-size: 1rem;
       }
       button {
          font-size: .9rem;
@@ -104,8 +105,16 @@ const PageMenu = styled.div`
 `
 
 const Menu = (props) => {
+
+   const [isClosed, setIsClosed] = useState(true);
+   const pageMenu = useRef(null);
+
+   useEffect(()=> {
+      if(pageMenu.current.clientWidth === 150) setIsClosed(false)
+   },[props.open])
+
    return (
-      <PageMenu open={props.open}>
+      <PageMenu open={props.open} isClosed={isClosed} ref={pageMenu}>
          <ul>
             <div>
                <Link to='/'><li>خانه</li></Link>

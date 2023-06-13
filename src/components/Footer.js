@@ -12,7 +12,7 @@ import TwitterIcon from '../Icons/twitter (3).svg';
 
 const Footer = () => {
    return (
-      <>
+      <div className={styles.footer}>
          <div className={styles.footerContainer}>
             <div className={styles.descriptionPart}>
                <div className={styles.descriptionImgContainer}>
@@ -52,7 +52,7 @@ const Footer = () => {
                </div>
             </div>
          </div>
-      </>
+      </div>
    );
 };
 

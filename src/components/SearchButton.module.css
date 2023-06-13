@@ -3,7 +3,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   right: 75px; top: 21px;
+   right: 75px; top: 20px;
    height: 40px;
    min-width: 40px;
    background-color: rgb(15, 30, 49);
@@ -95,7 +95,7 @@ a {
 
 /* Responsive */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
    .searchContainer {
       right: 85px; top: 21px;
       height: 50px;
@@ -118,7 +118,7 @@ a {
    .itemTitle h3 {
       font-size: .85rem;
    }
-}
+} */
 @media (max-width: 768px) {
    .searchContainer {
       right: 68px;

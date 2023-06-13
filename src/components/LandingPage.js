@@ -5,7 +5,6 @@ import MainProducts from "./MainProducts";
 import Category from './Category';
 
 const LandingPage = () => {
-
    return (
       <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center' , alignItems:'center'}}>
          <Banner/>

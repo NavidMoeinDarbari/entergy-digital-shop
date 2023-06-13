@@ -30,7 +30,6 @@ const App = () => {
       <div className={styles.app}>
          <Header/>
          <MainRoutes/>
-         <BurgerButton/>      
          <Footer/>
       </div>
    )
