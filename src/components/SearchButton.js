@@ -42,7 +42,8 @@ const SearchButton = () => {
    const searchHandler = () => {
       setIsActive(false)
       setSearchedItems([])
-      input.current.value = ''
+      // input.current.value = ''
+      setValue('')
    }
 
    return (
