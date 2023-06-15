@@ -2,8 +2,8 @@
    width: 100%; min-height: 100vh;
    display: flex;
    justify-content: center;
-   /* padding-top: 110px; */
-   /* align-items: center; */
+   padding: 110px 0;
+   /* align-items: start; */
    background-color: rgb(238,238,238);
    max-width: 1400px;
 }

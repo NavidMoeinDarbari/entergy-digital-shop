@@ -4,7 +4,7 @@
    display: flex;
    flex-direction: column;
    background-color: rgb(238,238,238);
-   margin-bottom: 90px;
+   margin-bottom: 60px;
    max-width: 1500px;
 }
 .titleContainer {
